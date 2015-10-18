@@ -3,165 +3,184 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп - каталог средств для ухода</title>
-  <meta name="keywords" content="Парикмахерская, интернет-магазин, средства для ухода, бритвенные принадлежности, акссесуары для ухода, BAXTER OF CALIFORNIA, MR NATTY, SUAVECITO, MALIN+GOETZ, MURRAY'S, AMERICAN CREW, гель для укладкиб шампунь, кондиционер для волос, набор для путешествий, глина для укладки волос">
-  <meta name="description" content="Купить средства для ухода от ведущих производителей (BAXTER OF CALIFORNIA, MR NATTY, SUAVECITO, MALIN+GOETZ, MURRAY'S, AMERICAN CREW)">
+    <meta name="keywords" content="Парикмахерская, интернет-магазин, средства для ухода, бритвенные принадлежности, акссесуары для ухода, Baxter of California, Mr Natty, Suavecito, Malin+Goetz, Murray's, American Crew, гель для укладкиб шампунь, кондиционер для волос, набор для путешествий, глина для укладки волос">
+    <meta name="description" content="Купить средства для ухода от ведущих производителей (Baxter of California, Mr Natty, Suavecito, Malin+Goetz, Murray's, American Crew)">
 	<!-- <link href="style.css" rel="stylesheet"> -->
-	<link rel="icon" type="image/png" href="http://.../favicon.png">
 </head>
 
-<body> <!-- задать стиль: шрифта, фона, margin: 0; -->
+<body> 
 	<!-- Блок для шапки -->
-	<header class="main-header"> <!--  применить стиль к тегу header: черный цвет, размер по всему экрану, высота  -->
-		<div class="container"> <!--  container = фиксирует ширину документа в 960px и центрует содержимое  -->
-			<nav class="navigation"> <!--  применить стиль к тегу nav: прилепить к левому краю, размер, положение контента  -->
+	<header class="main-header"> 
+		<div class="container"> 
+			<nav class="navigation"> 
 				<ul class="navigation-list">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Информация</a></li>
-					<li><a href="#">НОВОСТИ</a></li> 
-					<li><a href="#">ПРАЙС-ЛИСТ</a></li>
-					<li class="navigation-current"><a href="#">МАГАЗИН</a></li>
-					<li><a href="#">КОНТАКТЫ</a></li>
+					<li><a href="#">Новости</a></li> 
+					<li><a href="#">Прайс-лист</a></li>
+					<li class="navigation-current"><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul> 
 			</nav>
-			<div class="user-block"> <!--  применить стиль к тегу nav: прилепить к правому краю, размер, положение контента + про ссылку  -->
-				<a href="#">ВХОД</a>
+			<div class="user-block"> 
+				<a href="#">Вход</a>
 			</div>
 		</div>
 	</header>
 	
 	<!-- Блок для основного контейнера -->
-	<div class="container"> <!--  container = фиксирует ширину документа в 960px и центрует содержимое + headline,   -->
+	<div class="container">
 			
-			<!-- Блок для заголовка и хлебных крошек -->
-		  <h1 class="page-title">СРЕДСТВА ДЛЯ УХОДА</h1>
-		  <ul class="breadcrumbs"> <!-- задать стиль: list-style: none; (отсуствие маркеров) -->
-			  <li><a href="#">ГЛАВНАЯ</a></li>
-			  <li><a href="#">МАГАЗИН</a></li>
-			  <li class="breadcrumbs-current">СРЕДСТВА ДЛЯ УХОДА</li> <!--  задать серый цвет текста  -->
-			</ul>
+		<!-- Блок для заголовка и хлебных крошек -->
+		<h1 class="page-title">Средства для ухода</h1>
+		<ul class="breadcrumbs"> 
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Магазин</a></li>
+			<li class="breadcrumbs-current">Средства для ухода</li> 
+		</ul>
 			
-			<!-- Блок для фильтров и товаров -->
-			<div class="catalog clearfix"> 
+		<!-- Блок для фильтров и товаров -->
+		<div class="catalog clearfix"> 
 			
-				<!-- Блок для лева (фильтры)-->
-				<aside class="catalog-filters"> 
-					<form action="#" method="get"> <!-- метод get так как переход на отдельную страницу-->
-						<!-- Производители-->
-						<h2>ПРОИЗВОДИТЕЛИ</h2>
-						
-						<input type="checkbox" name="producer1" value="BAXTER-OF-CALIFORNIA" id="ch1" checked>
-						<label for="ch1">BAXTER OF CALIFORNIA</label>
-						
-						<p><label><input type="checkbox" name="producer2" value="MR-NATTY">MR NATTY</label></p>
-						<p><label><input type="checkbox" name="producer3" value="SUAVECITO" checked>SUAVECITO</label></p>
-						<p><label><input type="checkbox" name="producer4" value="MALIN-GOETZ">MALIN+GOETZ</label></p>
-						<p><label><input type="checkbox" name="producer5" value="MURRAY-S">MURRAY'S</label></p>
-						<p><label><input type="checkbox" name="producer6" value="AMERICAN-CREW" checked>AMERICAN CREW</label></p>
-
-						<!-- группы товаров-->
-
-						<h2>ГРУППЫ ТОВАРОВ</h2>
-						<p><label><input type="radio" name="product-group" value="shaving-things">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label></p>
-						<p><label><input type="radio" name="product-group" value="shaving-things" checked>СРЕДСТВА ДЛЯ УХОДА</label></p>
-						<p><label><input type="radio" name="product-group" value="shaving-things">АКСЕССУАРЫ</label></p>							
-
-						<!-- show задаст размер(высота и ширина), button - цвет и текст (для кнопки товаров тоже)-->	
-						<button class="btn" type="submit">ПОКАЗАТЬ</button>
-					</form>
-				</aside>
-				
-				<!-- Блок для права (товары) -->
-				<div class="catalog-container"> 
+			<!-- Блок для лева (фильтры)-->
+			<aside class="catalog-filters"> 
+				<form action="#" method="get"> 
 					
-					<article class="catalog-item">
-						<a href="#"><img src="http://placehold.it/220x165"></a>
-						<div class="product-description">
-  						<h1 class="product-title"><a href="#">Набор для путешествий &#171;BAXTER OF CALIFORNIA&#187;</a></h1>
-  						<div class="price-and-buy">
-  							<div class="price">2 900 РУБ.</div>
-  							<a href="#" class="btn">КУПИТЬ</a>
+					<h2>Производители</h2>
+						
+					<input type="checkbox" name="producer1" value="BAXTER-OF-CALIFORNIA" id="ch1" checked>
+					<label for="ch1">Baxter of California</label>
+						
+					<input type="checkbox" name="producer2" value="MR-NATTY" id="ch2">
+					<label for="ch2">Mr Natty</label>
+						
+					<input type="checkbox" name="producer3" value="Suavecito" id="ch3" checked>
+					<label for="ch3">Suavecito</label>
+						
+					<input type="checkbox" name="producer4" value="MALIN-GOETZ" id="ch4">
+					<label for="ch4">Malin+Goetz</label>
+						
+					<input type="checkbox" name="producer5" value="MURRAY-S" id="ch5">
+					<label for="ch5">Murray's</label>
+						
+					<input type="checkbox" name="producer6" value="AMERICAN-CREW" checked id="ch6">
+					<label for="ch6">American Crew</label>			
+
+					<h2>Группы товаров</h2>
+					<input type="radio" name="product-group" value="group1" id="radio1">
+					<label for="radio1">Бритвенные принадлежности</label>
+						
+					<input type="radio" name="product-group" value="group2" id="radio2" checked>
+					<label for="radio2">Средства для ухода</label>
+						
+					<input type="radio" name="product-group" value="group3" id="radio3">
+					<label for="radio3">Аксессуары</label>
+						
+					<button class="btn" type="submit">Показать</button>
+				</form>
+			</aside>
+				
+			<!-- Блок для права (товары + нижняя навигация) -->
+			<div class="catalog-container"> 
+					
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/220x165" alt="product picture" width="220" height="165"></a>
+					<div class="product-description">
+						<h1 class="product-title"><a href="#">Набор для путешествий &#171;Baxter of California&#187;</a></h1>
+						<div class="price-and-buy">
+							<div class="price">2 900 руб.</div>
+							<a href="#" class="btn">Купить</a>
   						</div>
   					</div>
-					</article>
+				</article>
 					
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/220x165" alt="product picture" width="220" height="165"></a>
+					<div class="product-description">
+  						<h1 class="product-title"><a href="#">Увлажняющий кондиционер &#171;Baxter of California&#187;</a></h1>
+  						<div class="price-and-buy">
+  							<div class="price">750 руб.</div>
+  							<a href="#" class="btn">Купить</a>
+  						</div>
+  					</div>
+				</article>
 					
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/220x165" alt="product picture" width="220" height="165"></a>
+					<div class="product-description">
+  						<h1 class="product-title"><a href="#">Гель для волос &#171;Suavecito&#187;</a></h1>
+  						<div class="price-and-buy">
+  							<div class="price">290 руб.</div>
+  							<a href="#" class="btn">Купить</a>
+  						</div>
+  					</div>
+				</article>
 					
-					<article class="product-background product-centre">
-						<a href="#"><img src="http://placehold.it/220x165"></a>
-						<p class="product-description"><a href="#">Увлажняющий кондиционер &#171;BAXTER OF CALIFORNIA&#187;</a></p>
-						<div class="price-and-buy">
-							<div class="price">750 РУБ.</div>
-							<div class="buy"><button class="button">КУПИТЬ</button></div>
-						</div>
-					</article>
-					<article class="product-background product-left">
-						<a href="#"><img src="http://placehold.it/220x165"></a>
-						<p class="product-description"><a href="#">Гель для волос &#171;SUAVECITO&#187;</a></p>
-						<div class="price-and-buy">
-							<div class="price">290 РУБ.</div>
-							<div class="buy"><button class="button">КУПИТЬ</button></div>
-						</div>
-					</article>
-					<article class="product-background product-right">
-						<a href="#"><img src="http://placehold.it/220x165"></a>
-						<p class="product-description"><a href="#">Глина для укладки волос &#171;AMERICAN CREW&#187;</a></p>
-						<div class="price-and-buy">
-							<div class="price">500 РУБ.</div>
-							<div class="buy"><button class="button">КУПИТЬ</button></div>
-						</div>
-					</article>
-					<article class="product-background product-centre">
-						<a href="#"><img src="http://placehold.it/220x165"></a>
-						<p class="product-description"><a href="#">Гель для волос &#171;AMERICAN CREW&#187;</a></p>
-						<div class="price-and-buy">
-							<div class="price">300 РУБ.</div>
-							<div class="buy"><button class="button">КУПИТЬ</button></div>
-						</div>
-					</article>
-					<article class="product-background product-left">
-						<a href="#"><img src="http://placehold.it/220x165"></a>
-						<p class="product-description"><a href="#">Набор для бритья &#171;BAXTER OF CALIFORNIA&#187;</a></p>
-						<div class="price-and-buy">
-							<div class="price">3 900 РУБ.</div>
-							<div class="buy"><button class="button">КУПИТЬ</button></div>
-						</div>
-					</article>
-					<!-- Блок для нижней навигации -->
-					<!-- ul class="pagination"
-					     li class="pagination-item"
-					     a class="pagination-link"
-					-->
-    			<div class="bottom-navigation"> 
-    				<a href="#" class="bottom-navigation-size button">1</a>
-    				<a href="#" class="bottom-navigation-size-current button">2</a>
-    				<a href="#" class="bottom-navigation-size button">3</a>
-    				<a href="#" class="bottom-navigation-size button">4</a>
-    			</div>
-				</div>
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/220x165" alt="product picture" width="220" height="165"></a>
+					<div class="product-description">
+  						<h1 class="product-title"><a href="#">Глина для укладки волос &#171;American Crew&#187;</a></h1>
+  						<div class="price-and-buy">
+  							<div class="price">500 руб.</div>
+  							<a href="#" class="btn">Купить</a>
+  						</div>
+  					</div>
+				</article>
+					
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/220x165" alt="product picture" width="220" height="165"></a>
+					<div class="product-description">
+  						<h1 class="product-title"><a href="#">Гель для волос &#171;American Crew&#187;</a></h1>
+  						<div class="price-and-buy">
+  							<div class="price">300 руб.</div>
+  							<a href="#" class="btn">Купить</a>
+  						</div>
+  					</div>
+				</article>
+					
+				<article class="catalog-item">
+					<a href="#"><img src="http://placehold.it/220x165" alt="product picture" width="220" height="165"></a>
+					<div class="product-description">
+  						<h1 class="product-title"><a href="#">Набор для бритья &#171;Baxter of California&#187;</a></h1>
+  						<div class="price-and-buy">
+  							<div class="price">3 900 руб.</div>
+  							<a href="#" class="btn">Купить</a>
+  						</div>
+  					</div>
+				</article>
+				
+				<!-- Блок для нижней навигации -->
+				<ul class="pagination"> 
+					<li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+					<li class="pagination-item-current"><a href="#" class="pagination-link">2</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">4</a></li> 
+				</ul>		
 			</div>
+		</div>
 	</div>
 	
 	<!-- Блок для футера -->
-	<footer class="main-footer"> <!--  применить стиль к тегу footer: изображение, размер по всему экрану, высота  -->
-		<div class="container"> <!--  container = фиксирует ширину документа в 960px и центрует содержимое  -->
+	<footer class="main-footer"> 
+		<div class="container">
 			<div class="contacts">
-				<p>БАРБЕРШОП &#171;БОРОДИНСКИЙ&#187;<br>
-				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-				<a href="#">КАК НАС НАЙТИ?</a><br>
-				ТЕЛЕФОН: +7(495)666-02-66</p>
+				<p>Барбершоп &#171;Бородинский&#187;<br>
+				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				Телефон: +7(495)666-02-66</p>
 			</div>
 			<div class="footer-social">
-				<p>ДАВАЙТЕ ДРУЖИТЬ!<p>
+				<p>Давайте дружить!<p>
 				<div class="social">
 					<a href="#" class="social-btn"><i class="icon-vk"></i></a>
-					<div class="Social-networks-button"><a href="#"><img src="images/facebook.png"></a></div>
-					<div class="Social-networks-button"><a href="#"><img src="images/instagram.png"></a></div>	
-					<div class="Social-networks-button"><a href="#"><img src="images/XXXX.png"></a></div>						
+					<a href="#" class="social-btn"><i class="icon-facebook"></i></a>
+					<a href="#" class="social-btn"><i class="icon-instagram"></i></a>
+					<a href="#" class="social-btn"><i class="icon-???"></i></a>				
 				</div>
 			</div>
 			<div class="htmlacademy">
-				<p>РАЗРАБОТАНО:<p>
-				<a href="#" class="link-htmlacademy button">HTMLACADEMY.RU</a>
+				<p>Разработано:<p>
+				<a href="#" class="link-htmlacademy">htmlacademy.ru</a>
 			</div>
 		</div>
 	</footer>
